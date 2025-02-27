@@ -1,0 +1,67 @@
+/* 添加样式 */
+.player-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+  }
+  
+  .file-inputs {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .player-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .lyrics-container {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .lyric-line {
+    padding: 8px;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+  }
+  
+  .lyric-line.active {
+    font-weight: bold;
+    transform: scale(1.05);
+    opacity: 1;
+    color: #2196f3;
+  }
+  
+  .time-display {
+    font-family: monospace;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  .lyrics-container {
+    height: 200px;
+    overflow-y: auto;
+    scroll-behavior: smooth; /* 新增 */
+    position: relative; /* 确保定位基准 */
+  }
+  
+  .lyric-line {
+    min-height: 30px;
+    /* 新增以下属性 */
+    transform: translateZ(0); /* 启用GPU加速 */
+    will-change: transform; 
+  }
