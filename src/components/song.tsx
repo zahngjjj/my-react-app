@@ -8,8 +8,6 @@ const DEMO_SONG = {
 
   
   lyrics: [
-    { time: 0, text: '作词: deepseek' },
-    { time: 2, text: '作曲: 老水叔叔' },
     { time: 4, text: '从那天起，你走进我生命' },
     { time: 10, text: '像春风轻轻，温暖了曾经' },
     { time: 15, text: '每一个笑容，都印在我心底' },
@@ -99,7 +97,10 @@ function MusicPlayer() {
     <>
        <div className="player-container">
       <h3 className='title'>Love that lasts forever</h3>
-      
+       <div className="credits">
+        <p>作词: deepseek</p>
+        <p>作曲：老水叔叔</p>
+      </div>
       <div className="player-controls">
         <audio
           ref={audioRef}

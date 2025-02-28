@@ -6,9 +6,16 @@
     background-size: 100% auto;
     background-size: cover;       /* 关键属性：覆盖整个容器 */
     background-position:top;   /* 可选：居中显示图片重点区域 */
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
   }
 
 
+/* 动画效果 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
   
   .file-inputs {
@@ -122,4 +129,37 @@
 
  .title {
   margin-top: 8vh;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-bottom: 1rem;
  }
+
+ .title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+}
+/* 作者信息 */
+.credits {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .player-container {
+    width: 600px;
+    padding: 2rem;
+  }
+
+}
