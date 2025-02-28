@@ -1,11 +1,13 @@
 /* 添加样式 */
 .player-container {
-    width: 400px;
-    margin: 2rem auto;
+    height: 100vh;
+    width: 94%;
+    max-width: 550px;
+    margin: 0 auto;
     padding: .8rem;
     border-radius: .6rem;
     background: url('https://laoshuishushu.oss-cn-beijing.aliyuncs.com/public/hunsha_small.jpg') no-repeat;
-    background-size: 100% auto;
+    background-size: 100% auto
   }
   
   .file-inputs {
@@ -38,7 +40,8 @@
     font-weight: bold;
     transform: scale(1.05);
     opacity: 1;
-    color: #2196f3;
+    color: rgba(255,255,255,.8);
+    font-weight: 400;
   }
   
   .time-display {
