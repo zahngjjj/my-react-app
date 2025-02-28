@@ -130,9 +130,15 @@ function MusicPlayer() {
         </div>
 
 
-        <button className="play-btn" onClick={togglePlay}>
-          {isPlaying ? '⏸ 暂停' : '▶ 播放'}
-        </button>
+        <div className='play-btn-box'>
+          <button className="play-btn" onClick={togglePlay}>
+            {isPlaying ? 
+            <span className='stop'></span>
+            : 
+            <span className='start'></span>
+            }
+          </button>
+        </div>
       </div>
     </div>
   );
