@@ -3,9 +3,8 @@
     width: 400px;
     margin: 2rem auto;
     padding: .8rem;
-    background: pink;
     border-radius: .6rem;
-    background: url('/public/JC1A0472.jpg') no-repeat;
+    background: url('https://laoshuishushu.oss-cn-beijing.aliyuncs.com/public/hunsha.jpg') no-repeat;
     background-size: 100% auto;
   }
   
