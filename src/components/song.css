@@ -139,6 +139,7 @@
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   position: relative;
+  padding-bottom: .8rem;
 
  }
 
@@ -154,7 +155,6 @@
 }
 /* 作者信息 */
 .credits {
-  margin-bottom: 1.2rem;
   opacity: 0.7;
   font-size: 0.90rem;
 
