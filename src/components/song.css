@@ -132,14 +132,14 @@
 
 
  .title {
-  margin-top: 8vh;
+  margin-top: 5vh;
   font-size: 1.4rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .6rem;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   position: relative;
-  padding-bottom: 1rem;
+
  }
 
  .title::after {
