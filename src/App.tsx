@@ -10,13 +10,7 @@ function App() {
   return (
     <>
  
-   
-      <div className="card">
-
-
         <Song></Song>
-    
-      </div>
 
     </>
   )

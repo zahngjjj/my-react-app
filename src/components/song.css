@@ -1,15 +1,15 @@
 /* 添加样式 */
 .player-container {
-    height: 100vh;
-    width: 94%;
-    max-width: 550px;
-    margin: 0 auto;
-    padding: .8rem;
-    /* border-radius: .6rem; */
+    height: 80vh;
+    width: 100%;
     background: url('https://laoshuishushu.oss-cn-beijing.aliyuncs.com/public/hunsha_small.jpg') no-repeat;
     background-size: 100% auto;
-    position: relative;
+    background-size: cover;       /* 关键属性：覆盖整个容器 */
+    background-position:top;   /* 可选：居中显示图片重点区域 */
   }
+
+
+
   
   .file-inputs {
     margin-bottom: 20px;
@@ -77,7 +77,7 @@
   }
 
   .lyrics-container {
-    height: 200px;
+    height: 220px;
     overflow-y: auto;
     scroll-behavior: smooth; /* 新增 */
     position: relative; /* 确保定位基准 */
@@ -107,7 +107,7 @@
 
   .play-btn-box {
     width: 100%;
-    height: 20%;
+    height:20vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -116,6 +116,10 @@
     bottom: 0;
     left: 0;
   }
+
+
+
+
  .title {
   margin-top: 8vh;
  }

@@ -96,7 +96,8 @@ function MusicPlayer() {
   }, [currentTime]);
 
   return (
-    <div className="player-container">
+    <>
+       <div className="player-container">
       <h3 className='title'>Love that lasts forever</h3>
       
       <div className="player-controls">
@@ -130,7 +131,11 @@ function MusicPlayer() {
         </div>
 
 
-        <div className='play-btn-box'>
+
+      </div>
+    </div>
+
+    <div className='play-btn-box'>
           <button className="play-btn" onClick={togglePlay}>
             {isPlaying ? 
             <span className='stop'></span>
@@ -139,8 +144,7 @@ function MusicPlayer() {
             }
           </button>
         </div>
-      </div>
-    </div>
+    </>
   );
 }
 
