@@ -3,7 +3,7 @@ import "./song.css"
 
 // 预置歌曲和歌词数据
 const DEMO_SONG = {
-  url: '/Love_that_lasts_forever.wav', // 将你的mp3文件放在public目录
+  url: '/love_ting.mp3', // 将你的mp3文件放在public目录
   // url: 'http://music.163.com/song/media/outer/url?id=1908673805.mp3', // 将你的mp3文件放在public目录
 
   
