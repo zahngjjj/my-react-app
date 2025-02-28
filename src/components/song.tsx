@@ -8,7 +8,9 @@ const DEMO_SONG = {
 
   
   lyrics: [
-    { time: 0, text: '从那天起，你走进我生命' },
+    { time: 0, text: '作词: deepseek' },
+    { time: 2, text: '作曲: 老水叔叔' },
+    { time: 4, text: '从那天起，你走进我生命' },
     { time: 10, text: '像春风轻轻，温暖了曾经' },
     { time: 15, text: '每一个笑容，都印在我心底' },
     { time: 20, text: '刘婷婷，你是我唯一的注定' },
@@ -104,9 +106,7 @@ function MusicPlayer() {
           onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
         />
         
-        <button onClick={togglePlay}>
-          {isPlaying ? '⏸ 暂停' : '▶ 播放'}
-        </button>
+
         
         <div className="time-display">
           {Math.floor(currentTime)}s / { 181}s
@@ -128,6 +128,11 @@ function MusicPlayer() {
             </div>
           ))}
         </div>
+
+
+        <button className="play-btn" onClick={togglePlay}>
+          {isPlaying ? '⏸ 暂停' : '▶ 播放'}
+        </button>
       </div>
     </div>
   );
