@@ -95,11 +95,11 @@ function MusicPlayer() {
 
   return (
     <>
-       <div className="player-container">
+      <div className="player-container">
       <h3 className='title'>Love that lasts forever</h3>
        <div className="credits">
-        <p>作词: deepseek</p>
-        <p>作曲：老水叔叔</p>
+        <div className='credits-part'><span className='credits-label'>作词:</span><span>老水叔叔</span></div>
+        <div className='credits-part'><span className='credits-label'>作曲:</span><span>老水叔叔</span></div>
       </div>
       <div className="player-controls">
         <audio
