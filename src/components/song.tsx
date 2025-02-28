@@ -97,7 +97,7 @@ function MusicPlayer() {
 
   return (
     <div className="player-container">
-      <h1>音乐播放器</h1>
+      <h3 className='title'>Love that lasts forever</h3>
       
       <div className="player-controls">
         <audio
@@ -107,10 +107,10 @@ function MusicPlayer() {
         />
         
 
-        
+{/*         
         <div className="time-display">
           {Math.floor(currentTime)}s / { 181}s
-        </div>
+        </div> */}
 
         <div className="lyrics-container" ref={lyricContainerRef}>
           {DEMO_SONG.lyrics.map((line, index) => (
