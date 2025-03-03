@@ -73,6 +73,17 @@ function MusicPlayer() {
      return isPlaying ? audioRef.current.pause() : audioRef.current.play();
   };
 
+
+  const handleEnded = () => {
+    const audioElement = audioRef.current;
+    if (!audioElement) return;
+
+    audioElement.currentTime = 0;
+    setIsPlaying(!isPlaying);
+   
+  };
+
+
   // 自动滚动歌词
   useEffect(() => {
     const container = lyricContainerRef.current;
@@ -105,6 +116,7 @@ function MusicPlayer() {
         <audio
           ref={audioRef}
           src={DEMO_SONG.url}
+          onEnded={handleEnded}
           onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
         />
         
