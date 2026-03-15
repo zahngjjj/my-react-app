@@ -66,6 +66,66 @@ body {
   margin: 0;
 }
 
+.app-shell {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-header__inner {
+  max-width: 1126px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.app-brand {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.app-nav {
+  display: flex;
+  gap: 14px;
+}
+
+.app-nav a {
+  color: var(--text-h);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.app-nav a.active {
+  border-color: var(--border);
+  background: var(--code-bg);
+}
+
+.app-main {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 28px 20px;
+  box-sizing: border-box;
+}
+
+.page {
+  text-align: left;
+}
+
 h1,
 h2 {
   font-family: var(--heading);
